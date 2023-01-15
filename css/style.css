@@ -270,6 +270,47 @@ nav {
 
 /*--- Fun Fact Section End ---*/
 
+/* My Section Start */
+
+
+
+.extra-section {
+  padding-top: 5vw;
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+
+}
+
+.extra-section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 3vw;
+}
+
+.achievements {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.achievement img {
+  width: 50%;
+}
+
+.work p, h3 {
+  text-align: center;
+
+}
+
+.work {
+  border: 1px solid darkgray;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+/* My section End */
+
 
 /* --- Sponsor Section Start  --- */
 .sponsor-container {
@@ -485,6 +526,21 @@ nav {
 
   /*---  Media Query for Fun Fact Start --- */
 
+  /* My section start here */
+  .extra_section {
+    flex-direction: column;
+  }
+
+  .achievements {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .extra-section-title {
+    font-size: 5vw;
+  }
+
+  /* My section end */
   /* Media Query for Sponsor  Start */
   .sponsor-container {
     max-width: 70%;
@@ -503,7 +559,7 @@ nav {
     align-items: center;
     justify-content: center;
     margin-left: 70px;
-    
+
   }
 
   .sponsor-img img:hover {
