@@ -1,0 +1,520 @@
+/* --- Import Fonts ---*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Work+Sans:wght@500&display=swap');
+
+/*--- Global Color Variable ---*/
+:root {
+  --white: #FFFFFF;
+  --dark1: #131313;
+  --dark2: #424242;
+  --orange: #FF900E;
+  --pink: #FFF4E7;
+
+}
+
+/*--- Primary Styles Start---*/
+body {
+  font-family: 'Work Sans', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+p {
+  line-height: 1.6;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.btn {
+
+  padding: 15px 30px;
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  font-size: 1em;
+  border-radius: 6px;
+}
+
+/*--- Primary Styles End---*/
+
+/*--- Header Style Start ---*/
+header {
+  background-color: rgba(255, 144, 14, 0.1);
+  padding-top: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+
+}
+
+.logo h1 {
+  font-size: 2vw;
+  color: var(--dark1);
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 3vw;
+}
+
+/*--- Header Style End ---*/
+
+/*--- Banner Container Style Start ---*/
+.baner-container {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+.banner-description {
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3vw;
+}
+
+.banner-description h1 {
+  font-size: 42px;
+  color: var(--dark1);
+}
+
+.banner-description p {
+  color: var(--dark2);
+  text-align: center;
+  padding: 0 250px 30px 250px;
+}
+
+.banner-img {
+  padding: 3vw 0;
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/*--- Banner Container Style End ---*/
+
+/*--- Feature Section Start ---*/
+.feature-container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 70%;
+  gap: 5vw;
+  padding: 4vw;
+}
+
+.feature-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1vw;
+  border-radius: 10px;
+}
+
+.feature-description h1 {
+  color: var(--dark1);
+  font-size: 2.5vw;
+}
+
+.feature-description p {
+  color: var(--dark2);
+  margin: 2vw 0;
+
+}
+
+.design1 {
+  color: var(--dark2);
+  font-weight: normal;
+}
+
+.design2 {
+  color: var(--orange);
+}
+
+/* Feature Section End */
+
+/*--- Love and Enjoy Section Start ---*/
+.feature-enjoy {
+  display: flex;
+  gap: 5vw;
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.feature-enjoy-description {
+  width: 50%;
+  position: relative;
+}
+
+.feature-enjoy-photo {
+  width: 50%;
+  position: relative;
+}
+
+.enjoy-title {
+  font-size: 3vw;
+  color: var(--dark1);
+  border-left: 5px solid var(--orange);
+  padding: 1vw;
+}
+
+.enjoy-pera {
+  color: var(--dark2);
+}
+
+.service {
+  margin-bottom: 2vw;
+  padding: 2vw;
+  box-shadow: 3px 3px 3px 3px rgb(238, 238, 238);
+}
+
+.service h2 {
+  font-size: 2vw;
+  color: var(--dark1);
+}
+
+.service p {
+  color: var(--dark2);
+}
+
+/*--- Love and Enjoy Section End ---*/
+
+/*--- Special Buttion Start ---*/
+.special-button {
+  display: flex;
+  margin: 0 auto;
+  height: 15vh;
+  width: 15vw;
+  background-color: var(--orange);
+  color: var(--white);
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 2vw;
+  border: none;
+  position: absolute;
+  margin-top: -6vw;
+  translate: 320%;
+
+}
+
+.btn-bold {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/*--- Special Buttion End ---*/
+
+/*--- Fun Fact Section Start ---*/
+
+
+.fact-container {
+  padding-top: 5vw;
+}
+
+.fact-title h1 {
+  font-size: 3vw;
+}
+
+.fact-title p {
+  color: var(--dark2);
+}
+
+.fact-elements {
+  display: flex;
+  gap: 4vw;
+  margin-top: 5vw;
+}
+
+.fact-element {
+  padding: 3vw;
+  border: 1px solid var(--orange);
+  text-align: center;
+  width: 20%;
+  transition: transform 2s;
+}
+
+.fact-element img {
+  height: 3vw;
+  width: 3vw;
+}
+
+.fact-element h2 {
+  color: var(--dark2);
+}
+
+.fact-element p {
+  color: var(--dark2);
+}
+
+.fact-elements :hover {
+  background-color: rgb(162, 197, 236);
+  border-radius: 5px;
+}
+
+/*--- Fun Fact Section End ---*/
+
+
+/* --- Sponsor Section Start  --- */
+.sponsor-container {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.sponsor-description {
+  text-align: center;
+  padding: 4vw;
+}
+
+.sponsor-description h1 {
+  font-size: 3vw;
+}
+
+.sponsor-description p {
+  color: var(--dark2);
+}
+
+.sponsor-img {
+  display: flex;
+  gap: 5vw;
+  height: 3vw;
+}
+
+/* --- Sponsor Section End  --- */
+
+
+/* --- Footer Style Start  --- */
+.footer {
+  margin-top: 5vw;
+  padding: 1vw;
+  background-color: #FFF4E7;
+  text-align: center;
+  color: var(--dark2);
+  width: 100%;
+  max-width: 80%;
+  margin: 80px auto;
+}
+
+/* --- Footer Style End  --- */
+
+
+
+
+/*--- Media Query for Small Devices Start Here ---*/
+
+@media screen and (max-width:768px) {
+
+
+  p {
+    font-size: 15px;
+    color: var(--dark2);
+  }
+
+  /*---  Media Query for Navigation Start Here ---*/
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo h1 {
+    font-size: 8vw;
+    border: 1px solid rgb(228, 228, 228);
+    padding: 10px 15px;
+    color: var(--orange);
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu li:hover {
+    border: 1px solid paleturquoise;
+    border-radius: 5px;
+    padding: 10px 30px;
+    background-color: var(--orange);
+    color: var(--white);
+  }
+
+  /* Media Query for Navigation End Here*/
+
+  /* Media Query for Banner Start Here*/
+  .banner-description h1 {
+    font-size: 24px;
+    color: var(--dark1);
+  }
+
+  .banner-description p {
+    padding: 0px 30px 10px 30px;
+    font-size: 14px;
+  }
+
+  .banner-img {
+    padding: 50px 0;
+  }
+
+  /* Media Query for Banner End Here*/
+
+  /* Media Query for Features Section Start Here*/
+  .feature-container {
+    flex-direction: column-reverse;
+  }
+
+  .feature-images {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .feature-description h1 {
+    font-size: 6vw;
+  }
+
+  .feature-images {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2vw;
+  }
+
+  .feature-btn {
+    margin-top: 20px;
+  }
+
+  .feature-enjoy {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .feature-enjoy-photo {
+    width: 80%;
+  }
+
+  .feature-enjoy-description {
+    width: 80%;
+  }
+
+  .feature-enjoy-description h1 {
+    font-size: 5vw;
+  }
+
+  /* Media Query for Features Section End Here*/
+
+
+  /* Media Query for Service Section Start*/
+  .service h2 {
+    font-size: 4vw;
+
+  }
+
+  .service {
+    padding: 4vw;
+    margin: 20px 0;
+  }
+
+  .feature-enjoy-photo {
+    width: 80%;
+  }
+
+  /* Media Query for Service Section End*/
+
+
+  /*---  Media Query for Special Button Start--- */
+  .special-button {
+    padding: 25px 40px;
+    margin-top: 1vw;
+    translate: 320%;
+  }
+
+  /*---  Media Query for Special Button End--- */
+
+  /*---  Media Query for Fun Fact Start --- */
+  .hide {
+    display: none;
+  }
+
+  .fact-title {
+    text-align: center;
+  }
+
+  .fact-title h1 {
+    font-size: 7vw;
+  }
+
+  .fact-title p {
+    padding: 2vw;
+  }
+
+  .fact-elements {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fact-element {
+    width: 80%;
+  }
+
+  .fact-element img {
+    height: 7vw;
+    width: 7vw;
+  }
+
+  /*---  Media Query for Fun Fact Start --- */
+
+  /* Media Query for Sponsor  Start */
+  .sponsor-container {
+    max-width: 70%;
+
+  }
+
+  .sponsor-description h1 {
+    font-size: 7vw;
+  }
+
+  .sponsor-img {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: fit-content;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+    
+  }
+
+  .sponsor-img img:hover {
+    border: 1px solid gainsboro;
+  }
+}
+
+/* Media Query for Sponsor  End */
+
+/* Media Query for Footer */
+
+footer p {
+  padding: 10px 20px;
+}
