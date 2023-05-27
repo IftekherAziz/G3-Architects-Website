@@ -1,3 +1,1 @@
-# Programming Hero Web Development Batch - 7 (Assignment 2)
-
-Live Website: https://iftekheraziz.github.io/G3-Architects-Website/
+# Live : https://g3-architect-ph.netlify.app/
